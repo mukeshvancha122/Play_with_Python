@@ -4,6 +4,12 @@ class Vehicle:
     # default constructor 
     def __init__():
         pass
+
+    #  static method
+    @staticmethod
+    def dummyMethod():
+        return "Im a dummy static method"
+    
     # parameterized constructor 
     def __init__(self,name,price,mileage):
         self.name=name
@@ -24,7 +30,9 @@ class EV(Vehicle):
 Bike=Vehicle("R15",210000,18)
 print(Bike)
 
-Car=EV()
+Car=EV("curv",1000000,20)
 
+# instance 2: EV curvß
 print(EV.sound())
-# instance 2: EV curv
+
+print(Vehicle.dummyMethod())
