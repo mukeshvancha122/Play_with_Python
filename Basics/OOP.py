@@ -18,6 +18,7 @@ class Vehicle:
     def __str__(self):
         return f"""Vehicle details:
                 Name: {self.name}, Price: {self.price}, MileageL {self.mileage} """
+    # abstraction
     def sound():
         return "Sound!"
 
